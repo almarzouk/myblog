@@ -17,7 +17,6 @@ if (isset($_SESSION['username'])) {
     }
 }
 ?>
-
 <!-- Form to add category Start-->
 <div id="layoutSidenav">
     <?php include './inc/navside.php' ?>

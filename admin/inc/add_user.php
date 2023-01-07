@@ -43,7 +43,6 @@ if (isset($_POST['create_user'])) {
     }
 }
 ?>
-<?php if (isset($_SESSION['user_role']) && $_SESSION['user_role'] == 'admin') : ?>
     <form action="" method="post" enctype="multipart/form-data">
         <div class="mb-3">
             <label class="form-label">Firstname</label>
@@ -80,9 +79,3 @@ if (isset($_POST['create_user'])) {
         </div>
         <input type="submit" class="btn btn-primary" name="create_user" value="Create User">
     </form>
-<?php else : ?>
-    <?php
-    header('Location:../index.php');
-    ?>
-<?php endif ?>
-<?php include 'inc/footer.php'; ?>

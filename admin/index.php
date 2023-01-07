@@ -1,7 +1,6 @@
 <?php include 'inc/header.php'; ?>
 <?php include 'inc/navbar.php' ?>
 <!-- Form to add category Start-->
-<?php if (isset($_SESSION['user_role']) && $_SESSION['user_role'] == 'admin') : ?>
     <div id="layoutSidenav">
         <?php include './inc/navside.php' ?>
         <div id="layoutSidenav_content">
@@ -136,9 +135,4 @@
             </main>
         </div>
     </div>
-<?php else : ?>
-    <?php
-    header('Location:../index.php');
-    ?>
-<?php endif ?>
 <?php include 'inc/footer.php'; ?>

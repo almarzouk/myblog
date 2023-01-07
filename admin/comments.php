@@ -24,9 +24,7 @@
                     default:
                         include './inc/view_all_comments.php';
                         break;
-                }
-
-                ?>
+                } ?>
             </div>
         </main>
     </div>

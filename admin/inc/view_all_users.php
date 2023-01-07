@@ -19,7 +19,6 @@ if (isset($_POST['checkBoxArray'])) {
     }
 }
 ?>
-<?php if (isset($_SESSION['user_role']) && $_SESSION['user_role'] == 'admin') : ?>
     <form action="" method="post">
         <div class="card-body" style="overflow-x: scroll;">
             <div class="d-flex justify-content-start align-items-center mb-3 mt-3">
@@ -115,9 +114,3 @@ if (isset($_POST['checkBoxArray'])) {
             </table>
         </div>
     </form>
-<?php else : ?>
-    <?php
-    header('Location:../index.php');
-    ?>
-<?php endif ?>
-<?php include 'inc/footer.php'; ?>

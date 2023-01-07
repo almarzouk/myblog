@@ -1,10 +1,5 @@
-<?php include 'inc/header.php';
-if (!is_admin($_SESSION['username'])) {
-    header('Location:index.php');
-}
-?>
+<?php include 'inc/header.php';?>
 <?php include 'inc/navbar.php' ?>
-<!-- Form to add category Start-->
 <div id="layoutSidenav">
     <?php include './inc/navside.php' ?>
     <div id="layoutSidenav_content">
@@ -32,9 +27,7 @@ if (!is_admin($_SESSION['username'])) {
                     ?>
                 </div>
             </div>
+        </main>
     </div>
-    </main>
 </div>
-</div>
-<!-- Form to add category End-->
 <?php include 'inc/footer.php'; ?>

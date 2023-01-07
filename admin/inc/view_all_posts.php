@@ -19,8 +19,6 @@ if (isset($_POST['checkBoxArray'])) {
     }
 }
 ?>
-<?php if (isset($_SESSION['user_role']) && $_SESSION['user_role'] == 'admin') : ?>
-    <?php include 'inc/footer.php'; ?>
     <form action="" method="post">
         <div class="card-body" style="overflow-x: scroll;">
             <!-- To select elements -->
@@ -116,14 +114,5 @@ if (isset($_POST['checkBoxArray'])) {
                     } ?>
                 </tbody>
             </table>
-            <nav aria-label="Page navigation example">
-                <ul class="pagination">
-                </ul>
-            </nav>
         </div>
     </form>
-<?php else : ?>
-    <?php
-    header('Location:../index.php');
-    ?>
-<?php endif ?>

@@ -73,7 +73,6 @@ if (isset($_POST['edit_post'])) {
     // header('Location:posts.php');
 }
 ?>
-<?php if (isset($_SESSION['user_role']) && $_SESSION['user_role'] == 'admin') : ?>
     <form action="" method="post" enctype="multipart/form-data">
         <div class="mb-3">
             <label class="form-label">Post Title</label>
@@ -149,9 +148,3 @@ if (isset($_POST['edit_post'])) {
         </div>
         <input type="submit" class="btn btn-primary" name="edit_post" value="Edit">
     </form>
-<?php else : ?>
-    <?php
-    header('Location:../index.php');
-    ?>
-<?php endif ?>
-<?php include 'inc/footer.php'; ?>

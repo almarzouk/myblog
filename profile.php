@@ -114,7 +114,7 @@ if (isset($_SESSION['username'])) {
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Password</label>
-                                <input value="<?= $user_password ?>" type="text" class="form-control" name="user_password">
+                                <input value="<?= $user_password ?>" type="password" class="form-control" name="user_password">
                             </div>
                             <input type="submit" class="btn btn-primary" name="edit_profile" value="Edit Profile">
                     </form>

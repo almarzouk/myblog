@@ -22,7 +22,7 @@ include './inc/db.php' ?>
                 $query->bindValue(':user_password', $hash_password, PDO::PARAM_STR);
                 if ($query->execute()) {
                     echo " <div class='alert alert-success alert-dismissible fade show' role='alert'>
-                    Your account has been created <a href='/blog'> Back home? <a/>
+                    Your account has been created <a href='/myblog'> Back home? <a/>
                     <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
                 </div>";
                 }

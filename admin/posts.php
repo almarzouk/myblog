@@ -1,6 +1,5 @@
 <?php include 'inc/header.php'; ?>
 <?php include 'inc/navbar.php' ?>
-<!-- Form to add category Start-->
 <div id="layoutSidenav">
     <?php include './inc/navside.php' ?>
     <div id="layoutSidenav_content">
@@ -18,6 +17,7 @@
                         } else {
                             $source = '';
                         }
+                        if ($source === 'add_post'){}
                         switch ($source) {
                             case 'add_post';
                                 include './inc/add_post.php';
@@ -36,5 +36,4 @@
         </main>
     </div>
 </div>
-<!-- Form to add category End-->
 <?php include 'inc/footer.php'; ?>

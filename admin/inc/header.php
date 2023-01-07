@@ -4,7 +4,6 @@
 <?php
 session_start()
 ?>
-
 <?php
 if (!isset($_SESSION['user_role']) && $_SESSION['user_role'] != 'admin') {
     header('Location:../index.php');
@@ -34,5 +33,4 @@ if (!isset($_SESSION['user_role']) && $_SESSION['user_role'] != 'admin') {
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
 </head>
-
 <body class="sb-nav-fixed">

@@ -51,17 +51,3 @@ function deleteCategory()
         }
     }
 }
-
-
-function is_admin($username)
-{
-    global $conn;
-    $query = "SELECT user_role FROM users WHERE username = '$username'";
-    $stat = $conn->query($query);
-    $result = $stat->fetch(PDO::FETCH_ASSOC);
-    if ($result['user_role'] == 'admin') {
-        return true;
-    } else {
-        return false;
-    }
-}

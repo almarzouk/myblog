@@ -1,3 +1,4 @@
+
 <?php
 if (isset($_POST['create_post'])) {
     $form_errors = [];
@@ -54,11 +55,6 @@ if (isset($_POST['create_post'])) {
     }
 }
 ?>
-<?php if (isset($_SESSION['user_role']) && $_SESSION['user_role'] == 'admin') : ?>
-
-
-
-
     <div class="card-body">
         <form action="" method="post" enctype="multipart/form-data">
             <div class="mb-3">
@@ -122,12 +118,5 @@ if (isset($_POST['create_post'])) {
                 <textarea class="form-control" id="summernote" name="post_content"></textarea>
             </div>
             <input type="submit" class="btn btn-primary" name="create_post" value="Create Post">
-        </form>
-
+        </form> 
     </div>
-<?php else : ?>
-    <?php
-    header('Location:../index.php');
-    ?>
-<?php endif ?>
-<?php include 'inc/footer.php'; ?>
