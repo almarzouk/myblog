@@ -10,7 +10,6 @@ if (isset($_POST['create_post'])) {
     $post_image = $_FILES['image']['name'];
     // temp
     $post_image_temp = $_FILES['image']['tmp_name'];
-    // finishing uploading
     $post_tags = $_POST['post_tags'];
     $post_content = $_POST['post_content'];
     $post_date = date('d-m-y');
@@ -26,7 +25,7 @@ if (isset($_POST['create_post'])) {
     if (empty($post_content)) {
         $form_errors[] = 'post Content can not be empty';
     }
-    // make the query
+    // make the query 
     if (empty($form_errors)) {
         $query = $conn->prepare("INSERT INTO posts (post_cat_id, post_title, post_user, post_date, post_image, post_content, post_tags, post_status)
                                             VALUES (:post_cat_id, :post_title, :post_user, :post_date, :post_image, :post_content, :post_tags, :post_status)");

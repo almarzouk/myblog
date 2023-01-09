@@ -61,10 +61,6 @@ if (isset($_POST['create_user'])) {
                 <option value="subscriber">subscriber</option>
             </select>
         </div>
-        <!-- <div class="mb-3">
-        <label class="form-label">Post Image</label>
-        <input type="file" class="form-control" name="image">
-    </div> -->
         <div class="mb-3">
             <label class="form-label">Username</label>
             <input type="text" class="form-control" name="username">

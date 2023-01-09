@@ -14,7 +14,6 @@ foreach ($result as $post) {
     $post_image = $post['post_image'];
     $post_tags = $post['post_tags'];
     $post_content = $post['post_content'];
-    $post_comment_count = $post['post_comment_count'];
     $post_date = $post['post_date'];
 }
 // submit the data to data base
